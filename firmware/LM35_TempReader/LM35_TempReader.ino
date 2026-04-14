@@ -1,17 +1,21 @@
-const int sensorPin = A0;
+const int sensorPins[2] = {A0, A1};
 
 void setup() {
   Serial.begin(9600);
 }
 
 void loop() {
-  int adcValue = analogRead(sensorPin);
+  int adcValues[2];
+  float temperatures[2];
   
-  float temperature = (adcValue * 500.0) / 1023.0;
+  for (int i = 0; i < 2; i++) {
+    adcValues[i] = analogRead(sensorPins[i]);
+    temperatures[i] = (adcValues[i] * 500.0) / 1023.0;
+  }
   
-  Serial.print("Nhiet do: ");
-  Serial.print(temperature);
-  Serial.println(" C");
+  Serial.print(temperatures[0]);
+  Serial.print(",");
+  Serial.println(temperatures[1]);
   
   delay(1000);
 }
