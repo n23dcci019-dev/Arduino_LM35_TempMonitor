@@ -1,21 +1,20 @@
-const int sensorPins[2] = {A0, A1};
+const int sensorPin = A0;
 
 void setup() {
   Serial.begin(9600);
 }
 
 void loop() {
-  int adcValues[2];
-  float temperatures[2];
+  // Đọc giá trị ADC từ chân A0
+  int adcValue = analogRead(sensorPin);
   
-  for (int i = 0; i < 2; i++) {
-    adcValues[i] = analogRead(sensorPins[i]);
-    temperatures[i] = (adcValues[i] * 500.0) / 1023.0;
-  }
+  // Chuyển đổi ADC sang nhiệt độ (độ C)
+  float temperature = (adcValue * 500.0) / 1023.0;
   
-  Serial.print(temperatures[0]);
-  Serial.print(",");
-  Serial.println(temperatures[1]);
+  // In ra Serial Monitor
+  Serial.print("Nhiet do: ");
+  Serial.print(temperature);
+  Serial.println(" C");
   
-  delay(1000);
+  delay(1000); // Đọc mỗi 1 giây
 }
