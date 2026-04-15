@@ -54,4 +54,4 @@ Arduino\_LM35\_TempMonitor/
 
 * **Họ và tên:** Lê Khánh Duy
 * **Mã số sinh viên:** n23dcci019
-* **Portfolio cá nhân:** [Xem thêm về các dự án khác của tôi tại đây](https://n23dcci019-dev.github.io)
+* **Portfolio cá nhân:** <a href="https://n23dcci019-dev.github.io" target="_blank">Xem thêm về các dự án khác của tôi tại đây</a>
