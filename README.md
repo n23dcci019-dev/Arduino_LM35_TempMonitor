@@ -50,3 +50,8 @@ Arduino\_LM35\_TempMonitor/
 
 └── README.md             # Tài liệu giới thiệu dự án
 
+##  Tác giả / Liên hệ
+
+* **Họ và tên:** Lê Khánh Duy
+* **Mã số sinh viên:** n23dcci019
+* **Portfolio cá nhân:** [Xem thêm về các dự án khác của tôi tại đây](https://n23dcci019-dev.github.io)
